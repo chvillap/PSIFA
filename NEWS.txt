@@ -1,0 +1,9 @@
+News
+====
+
+0.1
+---
+
+*Release date: 05-Out-2017*
+
+* Alpha 0.1 released.
