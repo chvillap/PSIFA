@@ -361,6 +361,7 @@ def psifa(f, x0, A, l, u, n, bl, bu, **kwargs):
         # the histories.
         if quasinewton_needed:
             if alpha > np.sqrt(prec1):
+                y_stencil = np.array(y_stencil)
                 xq, yq, history, evals, x_new_status = quasinewton(
                     f, W_stencil, y_stencil, xk, y_old, yk, history,
                     alpha, constrained, Tb, max_red, prec5)
